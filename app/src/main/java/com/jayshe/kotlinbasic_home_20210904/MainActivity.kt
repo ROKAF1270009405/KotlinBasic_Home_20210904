@@ -17,6 +17,14 @@ class MainActivity : AppCompatActivity() {
             Log.d("메인화면","로그 버튼 눌림")
 
         }
+        
+        secondLogBtn.setOnClickListener { 
+            
+//            두번째 버튼이 눌리면 할 일을 따로 지정
+            
+            Log.e("메인화면", "두번째 로그 버튼 눌림")
+            
+        }
 
     }
 }
