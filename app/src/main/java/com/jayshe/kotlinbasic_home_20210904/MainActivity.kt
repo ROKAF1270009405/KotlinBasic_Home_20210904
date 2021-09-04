@@ -11,8 +11,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
+
+        var myName = "전상효"
+        myName  = "전효상"
+        Log.d("이름출력-변수활용", myName)
+
+        introduceBtn.setOnClickListener {
+
+            Toast.makeText(this, "저는 전상효 입니다.", Toast.LENGTH_SHORT).show()
+
+        }
+
         toastBtn.setOnClickListener {
-//            토스트 - "반값습니다." 문장 띄우기
+//            토스트 - "반갑습니다." 문장 띄우기
 
             Toast.makeText(this,"반갑습니다.",Toast.LENGTH_SHORT).show()
 
